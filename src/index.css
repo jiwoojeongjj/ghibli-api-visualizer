@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply shadow-md p-4 font-sans transform hover:scale-110 hover:shadow-lg transition ease-out duration-1000;
+}
+
+.search-select {
+    @apply border-0 border-b-2 hover:bg-slate-300 hover:shadow-lg transition ease-out duration-1000;
+}
+
+.description {
+    @apply text-base pt-4 font-extralight;
+}
+
+.description-ul {
+    @apply list-disc list-inside;
+}
+
+.ghibli-animation {
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    0%   {background-color: white;}
+    20%  {background-color: #fca5a5;}
+    40%  {background-color: #fcd34d;}
+    60%  {background-color: #bef264;}
+    80%  {background-color: #a5b4fc;}
+    100% {background-color: #67e8f9;}
+}
